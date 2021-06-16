@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "Use Ace code editor",
+  "version": "0.1.0",
+  "description": "Use Ace code editor",
+ 
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["ace.js", "mode-python.js", "theme-twilight.js", "content.js"],
+    "matches": ["https://lab.karpov.courses/*"],
+    "all_frames": true
+  }]
+
+}
